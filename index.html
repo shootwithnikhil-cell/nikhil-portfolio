@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="icon" type="image/jpeg" href="public/favicon.jpg">
+    <title>Nikhil Pai - Portfolio</title>
+
+    <!-- Google Fonts for Navigation -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="main-header">
+        <nav class="site-nav">
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul id="nav-ul">
+                <li><a href="#home" data-section="work" class="active">WORK</a></li>
+                <li><a href="#about" data-section="about"><span class="nav-highlight">ABOUT</span> ME</a></li>
+                <li><a href="#contact" data-section="contact"><span class="nav-highlight">LET'S</span> COLLABORATE</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h1 class="hero-title">
+                <span class="first-name">NIKHIL</span>
+                <span class="last-name">PAI</span>
+            </h1>
+        </section>
+    </header>
+
+    <main id="main-content">
+
+        <!-- Work Section Grid -->
+        <section class="work" id="work">
+            <div class="video-grid" id="video-grid">
+                <!-- Videos injected by data.js and main.js -->
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2 class="section-title"><span class="first-name">ABOUT</span> ME</h2>
+            <div class="about-image-wrapper">
+                <img src="public/about_me.jpg" alt="About Nikhil Pai" class="about-image">
+            </div>
+            <div class="about-text">
+                <p>I’m a cinematographer who found my way into the craft by being on set and figuring things out in real time. I didn’t come up through a traditional, theory-heavy route. Instead, I learned the craft by doing, experimenting, and understanding how light, movement, and people come together to create something meaningful.</p>
+                <p>Over time, that hands-on approach has shaped how I see and shoot. I’ve worked across music videos, branded content, and narrative projects, and I’m always drawn to the feeling of a piece, especially how atmosphere can carry a story just as much as the story itself. I care a lot about building visuals that feel intentional and have a strong identity, not just something that looks good in isolation.</p>
+                <p>My work naturally leans toward mood and metaphor. I tend to focus on texture, contrast, and rhythm to bring out emotion, and I like letting those elements guide how a scene unfolds. Whether I’m working with a fully controlled setup or adapting to a real-world location, I’m always thinking about how everything fits together into a cohesive visual language.</p>
+                <p>I also value preparation, as it gives me a strong base to work from, but I do also make sure that it doesn't limit the process. Some of the best moments happen when there’s room to respond, adjust, and discover something unexpected on set.</p>
+                <p>I’m constantly looking to refine my craft and push my work further. For me, cinematography isn’t just about supporting a story. It’s about elevating it, making sure every visual decision contributes meaningfully to the overall experience, while being honest to each frame.</p>
+
+            </div>
+        </section>
+
+        <!-- Let's Collaborate Section -->
+        <section class="contact" id="contact">
+            <h2 class="section-title"><span class="first-name">LET'S</span> COLLABORATE</h2>
+            <div class="contact-info">
+                <a href="tel:+919619699910" class="contact-detail">96196 99910</a>
+                <span class="contact-or">or</span>
+                <a href="mailto:counteraxisp.ai@gmail.com" class="contact-detail">counteraxisp.ai@gmail.com</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Minimal Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <span class="footer-copy">&copy; 2026 NIKHIL PAI. All rights reserved.</span>
+            <span class="footer-role">Director of Photography</span>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for YouTube Video -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="video-wrapper">
+                <iframe id="youtube-iframe" width="100%" height="100%" src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
