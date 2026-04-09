@@ -25,6 +25,10 @@
     --font-nav: 'Barlow Condensed', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-white);
@@ -533,13 +537,15 @@ a {
     /* Stack video info vertically on small screens */
     .video-info {
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
         gap: 4px;
-        margin-top: 2px;
+        margin-top: 8px;
+        width: 100%;
+        overflow-wrap: break-word; /* Ensure long words like operator titles wrap if necessary */
     }
 
     .video-project {
-        text-align: right;
-        margin-top: -12px;
+        text-align: left;
+        margin-top: 0;
     }
 }
