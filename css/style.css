@@ -26,7 +26,7 @@
 }
 
 html {
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
     color: var(--text-white);
     font-family: var(--font-nav);
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: clip;
     overflow-anchor: none;
     /* Prevents scrollbar jumping when sticky header resizes */
     padding: 0 4vw;
@@ -268,7 +268,8 @@ a {
 .about-text {
     font-family: var(--font-nav);
     /* Readable fallback for body text */
-    font-size: 1.4rem; /* Making it slightly larger since Barlow Condensed is narrow */
+    font-size: 1.4rem;
+    /* Making it slightly larger since Barlow Condensed is narrow */
     color: var(--text-gray);
     line-height: 1.5;
     margin-top: 3rem;
@@ -458,8 +459,8 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     #main-header.scrolled {
@@ -475,9 +476,11 @@ a {
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
+
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
@@ -537,15 +540,20 @@ a {
     /* Stack video info vertically on small screens */
     .video-info {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
         gap: 4px;
         margin-top: 8px;
         width: 100%;
-        overflow-wrap: break-word; /* Ensure long words like operator titles wrap if necessary */
+        overflow-wrap: break-word;
+        /* Ensure long words like operator titles wrap if necessary */
+    }
+
+    .video-role {
+        text-align: right;
     }
 
     .video-project {
-        text-align: left;
-        margin-top: 0;
+        text-align: right;
+        margin-top: -12px;
     }
 }
