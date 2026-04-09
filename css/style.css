@@ -229,6 +229,7 @@ a {
     font-size: 1.5rem;
     letter-spacing: 0.05em;
     margin-top: 10px;
+    gap: 8px;
 }
 
 .video-role {
@@ -261,12 +262,13 @@ a {
 }
 
 .about-text {
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-nav);
     /* Readable fallback for body text */
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Making it slightly larger since Barlow Condensed is narrow */
     color: var(--text-gray);
-    line-height: 1.8;
+    line-height: 1.5;
     margin-top: 3rem;
+    letter-spacing: 0.03em;
 }
 
 .about-text h3 {
@@ -305,12 +307,14 @@ a {
 .contact-detail {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
-    font-size: 98px;
+    font-size: clamp(28px, 9vw, 49px);
     line-height: 1.1;
     color: var(--text-white);
     text-decoration: none;
     transition: color 0.3s ease;
     display: block;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .contact-detail:hover {
@@ -341,8 +345,15 @@ a {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.footer-role {
+    color: var(--brand-orange);
 }
 
 @media (max-width: 600px) {
@@ -439,8 +450,22 @@ a {
   Mobile Adjustments (Strictly for max-width: 800px)
 */
 @media (max-width: 800px) {
+    #main-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #main-header.scrolled {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
     .hamburger {
         display: flex;
+        z-index: 1000;
     }
 
     .hamburger.active .bar:nth-child(1) {
@@ -454,8 +479,10 @@ a {
     }
 
     .site-nav {
-        padding-top: 52px;
-        justify-content: flex-end;
+        order: 2;
+        padding: 0 !important;
+        display: flex;
+        align-items: center;
     }
 
     .site-nav ul {
@@ -481,29 +508,38 @@ a {
         font-size: 2.5rem;
     }
 
-    /* Fix Overlapping by stacking them clearly */
-    #main-header.scrolled .site-nav {
-        padding-top: 27px;
-        padding-bottom: 5px;
-        justify-content: flex-end;
+    .hero {
+        order: 1;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform: none !important;
     }
 
-    #main-header.scrolled .hero {
-        margin-top: -30px;
-        /* Pulls text up into the nav bar line */
-        padding-bottom: 15px;
+    .hero-title {
+        font-size: 40px !important;
+        justify-content: flex-start !important;
+        transition: none !important;
+        margin: 0;
+        line-height: 1;
     }
 
-    #main-header.scrolled .hero-title {
-        font-size: 2.5rem;
-        /* Manageable logo size for mobile screens */
-        justify-content: flex-start;
-        /* Left aligned */
+    .last-name {
+        flex-grow: 0 !important;
+        text-align: left !important;
+        padding-left: 10px !important;
+        transition: none !important;
     }
 
-    #main-header.scrolled .last-name {
-        flex-grow: 0;
-        text-align: left;
-        margin-left: 10px;
+    /* Stack video info vertically on small screens */
+    .video-info {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+        margin-top: 2px;
+    }
+
+    .video-project {
+        text-align: right;
+        margin-top: -12px;
     }
 }

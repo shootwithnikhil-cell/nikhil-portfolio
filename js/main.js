@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
                          <img src="${localThumbnailUrl}" onerror="this.onerror=null; this.src='${fallbackThumbnailUrl}';" alt="${data.project} Thumbnail" loading="lazy">
                     </div>
                     <div class="video-info">
-                        <span class="video-role">${data.role}-&nbsp;&nbsp;</span>
-                        <span class="video-project">${data.project}</span>
+                        <span class="video-role">${data.role}</span>
+                        <span class="video-project">- ${data.project}</span>
                     </div>
                 </div>
             `;

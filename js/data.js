@@ -58,22 +58,22 @@ const videoData = [
         image: "Diary of a serial killer.jpg"
     },
     {
-        url: "https://youtu.be/UspjkqipvsI",
-        role: "1st AC",
-        project: "Twinning with USPA",
-        image: "Twinning with USPA.jpg"
+        url: "https://youtu.be/8WIvURhu534",
+        role: "1st AC | Camera Operator",
+        project: "Amul hint",
+        image: "Amul hint.jpg"
+    },
+    {
+        url: "https://youtu.be/3kOs-k0b0-Y",
+        role: "1st AC | Camera Operator",
+        project: "Kellogs",
+        image: "Kellogs.jpg"
     },
     {
         url: "https://youtu.be/HuOwHJ5Iz-0",
         role: "1st AC",
         project: "Tira | For every you",
         image: "Tira.jpg"
-    },
-    {
-        url: "https://youtu.be/DaXm52-NxHA",
-        role: "1st AC",
-        project: "Fogg : The Party Perfume",
-        image: "Fogg.jpg"
     },
     {
         url: "https://youtu.be/NHflsJrXKaI",
@@ -88,16 +88,22 @@ const videoData = [
         image: "Dove.jpg"
     },
     {
-        url: "https://youtu.be/M119FchDv2s",
-        role: "1st AC",
-        project: "Whisper : The missing chapter",
-        image: "Whisper.jpg"
-    },
-    {
         url: "https://youtu.be/mi8rn0R-j_w",
         role: "1st AC",
         project: "Oppo",
         image: "Oppo.jpg"
+    },
+    {
+        url: "https://youtu.be/DaXm52-NxHA",
+        role: "1st AC",
+        project: "Fogg : The Party Perfume",
+        image: "Fogg.jpg"
+    },
+    {
+        url: "https://youtu.be/M119FchDv2s",
+        role: "1st AC",
+        project: "Whisper : The missing chapter",
+        image: "Whisper.jpg"
     },
     {
         url: "https://youtu.be/aM6bNKfw1Xg",
@@ -118,10 +124,10 @@ const videoData = [
         image: "Tvs Jupiter .jpg"
     },
     {
-        url: "https://youtu.be/8WIvURhu534",
+        url: "https://youtu.be/UspjkqipvsI",
         role: "1st AC",
-        project: "Amul hint",
-        image: "Amul hint.jpg"
+        project: "Twinning with USPA",
+        image: "Twinning with USPA.jpg"
     },
     {
         url: "https://youtu.be/g4Iy_KeL2LY",
@@ -134,12 +140,6 @@ const videoData = [
         role: "1st AC",
         project: "ASICS",
         image: "ASICS.jpg"
-    },
-    {
-        url: "https://youtu.be/3kOs-k0b0-Y",
-        role: "1st AC",
-        project: "Kellogs",
-        image: "Kellogs.jpg"
     },
     {
         url: "https://youtu.be/MU4FXlwNrcA",
