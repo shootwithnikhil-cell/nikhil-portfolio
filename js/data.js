@@ -109,7 +109,7 @@ const videoData = [
         url: "https://youtu.be/aM6bNKfw1Xg",
         role: "1st AC",
         project: "Google",
-        image: "Google.jpeg"
+        image: "Google.jpg"
     },
     {
         url: "https://youtu.be/G4o-Y01r-bY",
