@@ -71,7 +71,7 @@ const videoData = [
     },
     {
         url: "https://youtu.be/H9-HCU3Rdtw",
-        role: "1st AC/ Camera operator",
+        role: "1st AC/ 2ND Camera operator",
         project: "Kalki Fashion (Reception)",
         image: "KALKI-Reception.jpg"
     },
