@@ -10,6 +10,12 @@ const videoData = [
         image: "My Therapist Says.jpg"
     },
     {
+        url: "https://www.youtube.com/watch?v=vYbsAif-BZc",
+        role: "DOP",
+        project: "This Dope Shit",
+        image: "This-Dope-Shit.jpg"
+    },
+    {
         url: "https://youtu.be/Js8oSyfvtug",
         role: "1st AC | 2nd camera operator",
         project: "Tu Ya Main",
@@ -56,6 +62,18 @@ const videoData = [
         role: "1st AC | Camera operator",
         project: "Diary of a serial killer",
         image: "Diary of a serial killer.jpg"
+    },
+    {
+        url: "https://youtu.be/i_6OTDZcAkQ",
+        role: "1st AC/ 2nd camera operator",
+        project: "Kalki Fashion (Wedding)",
+        image: "KALKI-Wedding.jpg"
+    },
+    {
+        url: "https://youtu.be/H9-HCU3Rdtw",
+        role: "1st AC/ Camera operator",
+        project: "Kalki Fashion (Reception)",
+        image: "KALKI-Reception.jpg"
     },
     {
         url: "https://youtu.be/8WIvURhu534",
