@@ -65,13 +65,13 @@ const videoData = [
     },
     {
         url: "https://youtu.be/i_6OTDZcAkQ",
-        role: "1st AC/ 2nd camera operator",
+        role: "1st AC | 2nd camera operator",
         project: "Kalki Fashion (Wedding)",
         image: "KALKI-Wedding.jpg"
     },
     {
         url: "https://youtu.be/H9-HCU3Rdtw",
-        role: "1st AC/ 2ND Camera operator",
+        role: "1st AC | 2ND Camera operator",
         project: "Kalki Fashion (Reception)",
         image: "KALKI-Reception.jpg"
     },
