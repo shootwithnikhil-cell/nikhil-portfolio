@@ -16,6 +16,30 @@ const videoData = [
         image: "This-Dope-Shit.jpg"
     },
     {
+        url: "https://youtube.com/shorts/p7pcGFta3Ig",
+        role: "DOP",
+        project: "Solana Wormhole",
+        image: "Solana-Wormhole.jpg"
+    },
+    {
+        url: "https://www.youtube.com/watch?v=uHdUZCDnr04",
+        role: "DOP",
+        project: "Ananya Panday & Her Squad React To The Summer I Turned Pretty",
+        image: "Turned-Preety.jpg"
+    },
+    {
+        url: "https://www.youtube.com/watch?v=oqejrobDDyc",
+        role: "DOP",
+        project: "Audition Footage Leaks - Cinema Marte Dum Tak",
+        image: "Audition-Footage-Leaks.jpg"
+    },
+    {
+        url: "https://www.youtube.com/watch?v=j4DPOurOikQ&list=RDj4DPOurOikQ&start_radio=1",
+        role: "DOP",
+        project: "Mansheel Gujral Live Band",
+        image: "Mansheel-Gujral.jpg"
+    },
+    {
         url: "https://youtu.be/Js8oSyfvtug",
         role: "1st AC | 2nd camera operator",
         project: "Tu Ya Main",
